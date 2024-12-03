@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Dating App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="welcome-screen" class="screen">
+            <h1>Blind Dating App</h1>
+            <button id="joinQueue">Join Queue</button>
+        </div>
+
+        <div id="queue-screen" class="screen hidden">
+            <h2>Finding your match...</h2>
+            <div class="loader"></div>
+        </div>
+
+        <div id="date-screen" class="screen hidden">
+            <div id="phase-info">
+                <h2 id="current-phase">Warm-up Phase</h2>
+                <div id="timer">30</div>
+            </div>
+            
+            <div id="topic-container" class="hidden">
+                <h3 id="current-topic"></h3>
+                <div id="rating-container"></div>
+            </div>
+
+            <div id="audio-controls">
+                <button id="muteButton">Mute</button>
+            </div>
+
+            <div id="reveal-container" class="hidden">
+                <h3>Would you like to reveal your face?</h3>
+                <button id="acceptReveal">Yes</button>
+                <button id="declineReveal">No</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen hidden">
+            <h2>Date Results</h2>
+            <div id="ratings-summary"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/topic-manager.js"></script>
+    <script src="js/audio-handler.js"></script>
+    <script src="js/room.js"></script>
+    <script src="js/components/rating.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

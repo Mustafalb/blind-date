@@ -1,0 +1,30 @@
+{
+  "name": "blind-dating-app",
+  "version": "1.0.0",
+  "description": "A web-based blind dating application with audio chat and timed phases",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dating",
+    "webrtc",
+    "socket.io",
+    "real-time"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
